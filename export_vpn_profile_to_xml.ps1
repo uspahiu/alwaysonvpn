@@ -108,5 +108,3 @@ $Xml = Get-CimInstance -Namespace 'root\cimv2\mdm\dmmap' -ClassName 'MDM_VPNv2_0
 # // Output ProfileXML to file
 Write-Verbose "Writing ProfileXML to $xmlFilePath..."
 Format-XML $xml | Out-File $xmlFilePath
-
-Write-Warning 'The output XML file is for troubleshooting purposes only. It cannot be used to deploy Always On VPN connections using Microsoft Endpoint Manager or PowerShell.'
